@@ -1,0 +1,8 @@
+{"time":"2026-10-11T13:47:41.992Z","event":"REGISTER","username":"testinguser","passwordReceived":false}
+{"time":"2026-10-11T13:49:04.663Z","event":"CHALLENGE_ISSUED","username":"testinguser","challengeId":"PW7ssEIS9ziztH8N285AmoEP"}
+{"time":"2026-10-11T13:49:04.733Z","event":"LOGIN_FAILED","username":"testinguser","reason":"hmac_mismatch"}
+{"time":"2026-10-11T13:49:13.551Z","event":"CHALLENGE_ISSUED","username":"testinguser","challengeId":"49VbWaToN_PX6xBzuqZ9toLh"}
+{"time":"2026-10-11T13:49:13.619Z","event":"LOGIN_SUCCESS","username":"testinguser"}
+{"time":"2026-10-11T13:50:20.542Z","event":"REPLAY_BLOCKED","username":"testinguser","challengeId":"49VbWaToN_PX6xBzuqZ9toLh"}
+{"time":"2026-10-11T13:50:43.149Z","event":"CHALLENGE_ISSUED","username":"testinguser","challengeId":"8Kd6pc6UscbDxmm35KR3aZS_"}
+{"time":"2026-10-11T13:50:43.222Z","event":"LOGIN_FAILED","username":"testinguser","reason":"hmac_mismatch"}

@@ -1,0 +1,13 @@
+*{box-sizing:border-box} :root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#172033;background:#f3f6fb}body{margin:0}
+.page{width:min(1020px,calc(100% - 32px));margin:32px auto 48px}.hero{padding:30px;background:#142c4f;color:#fff;border-radius:18px;box-shadow:0 14px 32px #12274822}
+.eyebrow{margin:0 0 10px;letter-spacing:.12em;font-size:11px;font-weight:700;color:#a8c6f5}h1{margin:0;font-size:clamp(27px,4vw,38px);line-height:1.15}.subtitle{color:#dce7f7;margin:12px 0 20px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips span{font-size:12px;border:1px solid #ffffff45;padding:6px 10px;border-radius:20px;color:#eef5ff}
+.notice{margin:18px 0;background:#e9f2ff;border:1px solid #c7dcfa;border-radius:12px;padding:16px 18px}.notice p{margin:6px 0 0;color:#42536c;line-height:1.5}
+.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.panel{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:22px;box-shadow:0 5px 18px #182b4510}
+h2{margin:0 0 8px;font-size:19px}.muted{color:#64748b;font-size:13px;line-height:1.5}label{display:block;margin:15px 0 6px;font-size:13px;font-weight:650}
+input{width:100%;border:1px solid #cbd5e1;border-radius:8px;padding:11px 12px;font:inherit;outline:none}input:focus{border-color:#316ce5;box-shadow:0 0 0 3px #316ce522}
+button{background:#2463d7;color:white;border:0;border-radius:8px;padding:11px 14px;margin-top:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}button:hover{background:#174db2}button:disabled{opacity:.45;cursor:not-allowed}
+button.secondary{color:#334155;background:#f8fafc;border:1px solid #cbd5e1}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons button{flex:1}.status{min-height:20px;font-size:13px;line-height:1.45;overflow-wrap:anywhere}.status.success{color:#087443}.status.error{color:#b42318}
+.payload{margin-top:18px}.payload-head{display:flex;align-items:start;justify-content:space-between;gap:16px}.small{margin-top:0}
+pre{background:#101a2b;color:#dbeafe;border-radius:10px;padding:15px;min-height:92px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.55 ui-monospace,Consolas,monospace}
+footer{text-align:center;margin-top:25px;font-size:13px}@media(max-width:700px){.columns{grid-template-columns:1fr}.hero{padding:23px}.payload-head{flex-direction:column}}

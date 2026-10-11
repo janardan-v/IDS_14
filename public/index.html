@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Challenge–Response Authentication | IDS Lab</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="page">
+<header class="hero"><p class="eyebrow">INFORMATION AND DATA SECURITY LAB · EXPERIMENT 14</p>
+<h1>Challenge–Response Authentication</h1><p class="subtitle">Prove knowledge of a password without sending the password itself.</p>
+<div class="chips"><span>PBKDF2-HMAC-SHA256</span><span>HMAC-SHA256</span><span>RSA-PSS</span><span>Replay protection</span></div></header>
+<section class="notice"><strong>How it works</strong><p>Your browser derives a verifier from the password. During login it answers a fresh, signed server challenge. The password itself is not included in API requests.</p></section>
+<div class="columns">
+<section class="panel"><h2>1 · Register</h2><p class="muted">Create an account using a random salt and derived verifier.</p>
+<form id="registerForm"><label for="regUser">Username</label><input id="regUser" required maxlength="40" pattern="[A-Za-z0-9_.-]+" autocomplete="username">
+<label for="regPass">Password</label><input id="regPass" type="password" minlength="8" required autocomplete="new-password"><button>Register account</button></form><p id="registerStatus" class="status" aria-live="polite"></p></section>
+<section class="panel"><h2>2 · Login</h2><p class="muted">Challenge is single-use and expires after 60 seconds.</p>
+<form id="loginForm"><label for="loginUser">Username</label><input id="loginUser" required maxlength="40" autocomplete="username">
+<label for="loginPass">Password</label><input id="loginPass" type="password" required autocomplete="current-password">
+<div class="buttons"><button>Login securely</button><button id="replayButton" type="button" class="secondary" disabled>Replay last response</button></div></form><p id="loginStatus" class="status" aria-live="polite"></p></section></div>
+<section class="panel payload"><div class="payload-head"><div><h2>3 · Security event log</h2><p class="muted">Recent registration and authentication events.</p></div><button id="refreshLog" type="button" class="secondary small">Refresh log</button></div>
+<pre id="eventLog">Ready. Register an account to begin.</pre></section>
+<footer><p>Student: <strong>JANARDHAN VEMA</strong> · Roll No. <strong>2024UCS1538</strong></p><p class="muted">Classroom prototype only; see README for limitations.</p></footer>
+</main><script src="/app.js"></script></body></html>
